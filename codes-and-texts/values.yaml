@@ -5,7 +5,7 @@ database:
     tag: 13-alpine
   network:
     jdbc:
-      containerPort: 5432
+      servicePort: 5432
       ingress:
         host: cat-server.apps.baloise.dev
     env:
