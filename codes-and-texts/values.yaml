@@ -1,20 +1,20 @@
 database:
-  replicaCount: 0
+  replicaCount: 1
   image:
     repository: postgres
     tag: 13-alpine
   network:
     http:
-      servicePort: 8080
+      servicePort: 5432
       ingress:
         host: cat-server.apps.baloise.dev
     env:
     - name: POSTGRES_DB
-      value: tbd
+      value: cat
     - name: DATABASE_USER
-      value: tbd
+      value: cat
     - name: POSTGRES_PASSWORD
-      value: tbd
+      value: cat
 
 server:
   replicaCount: 0
