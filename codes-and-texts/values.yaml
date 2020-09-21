@@ -10,6 +10,7 @@ database:
         host: cat-database.apps.baloise.dev
   persistence:
     name: data
+    enabled: true
     accessModes: ReadWriteMany
     size: 100Mi
   volumeMounts:
