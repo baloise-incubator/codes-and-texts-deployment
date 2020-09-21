@@ -4,8 +4,8 @@ database:
     repository: postgres
     tag: 13-alpine
   network:
-    http:
-      servicePort: 5432
+    jdbc:
+      containerPort: 5432
       ingress:
         host: cat-server.apps.baloise.dev
     env:
