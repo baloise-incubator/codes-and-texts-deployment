@@ -11,7 +11,8 @@ database:
   persistence:
     name: data
     enabled: true
-    accessModes: ReadWriteMany
+    #storageClass: custom-storage-class
+    #accessModes: ReadWriteMany
     size: 100Mi
   volumeMounts:
     - mountPath: /var/lib/postgresql/data
