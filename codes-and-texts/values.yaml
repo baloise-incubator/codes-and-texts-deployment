@@ -1,27 +1,8 @@
 database:
-  replicaCount: 1
-  image:
-    repository: postgres
-    tag: 13-alpine
-  network:
-    jdbc:
-      servicePort: 5432
-      ingress:
-        host: cat-database.apps.baloise.dev
-  persistence:
-    name: data
+  securityContext:
     enabled: true
-    #storageClass: custom-storage-class
-    #accessModes: ReadWriteMany
-    size: 100Mi
-  volumeMounts:
-    - mountPath: /var/lib/postgresql/data
-      name: data
-  env:
-  - name: POSTGRES_DB
-    value: cat
-  - name: DATABASE_USER
-    value: cat
-  - name: POSTGRES_PASSWORD
-    value: cat
-
+    fsGroup: 1000620000
+    runAsUser: 1000620000
+  postgresqlUsername: cat
+  postgresqlPassword: cat
+  postgresqlDatabase: cat
