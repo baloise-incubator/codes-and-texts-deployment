@@ -1,8 +1,8 @@
 database:
   securityContext:
     enabled: true
-    fsGroup: 1000940000
-    runAsUser: 1000940000
+    fsGroup: 1000620000
+    runAsUser: 1000620000
   postgresqlUsername: cat
   postgresqlPassword: cat
   postgresqlDatabase: cat

@@ -3,7 +3,7 @@ name: cat
 version: 1.0.0
 dependencies:
 - name: postgresql
-  version: 9.7.0
+  version: 8.10.14
   repository: https://charts.bitnami.com/bitnami
   alias: database
 
