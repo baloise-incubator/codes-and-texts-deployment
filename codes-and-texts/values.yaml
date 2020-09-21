@@ -8,11 +8,11 @@ database:
       servicePort: 5432
       ingress:
         host: cat-database.apps.baloise.dev
-    env:
-    - name: POSTGRES_DB
-      value: cat
-    - name: DATABASE_USER
-      value: cat
-    - name: POSTGRES_PASSWORD
-      value: cat
+  env:
+  - name: POSTGRES_DB
+    value: cat
+  - name: DATABASE_USER
+    value: cat
+  - name: POSTGRES_PASSWORD
+    value: cat
 
