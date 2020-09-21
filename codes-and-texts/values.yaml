@@ -8,7 +8,7 @@ database:
       servicePort: 5432
       ingress:
         host: cat-database.apps.baloise.dev
-  persistance:
+  persistence:
     name: data
     accessModes: ReadWriteMany
     size: 100Mi
