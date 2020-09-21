@@ -8,6 +8,13 @@ database:
       servicePort: 5432
       ingress:
         host: cat-database.apps.baloise.dev
+  persistance:
+    name: data
+    accessModes: ReadWriteMany
+    size: 100Mi
+  volumeMounts:
+    - mountPath: /var/lib/postgresql/data
+      name: data
   env:
   - name: POSTGRES_DB
     value: cat
