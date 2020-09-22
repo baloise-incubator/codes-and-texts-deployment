@@ -21,7 +21,7 @@ server:
   - name: SPRING_PROFILES_ACTIVE
     value: docker
   - name: DATABASE_URL
-    value: jdbc:postgresql://database:5432
+    value: jdbc:postgresql://codes-and-texts-database:5432
   - name: DATABASE_USER
     value: cat
   - name: DATABASE_PASS
