@@ -22,9 +22,9 @@ catserver:
     value: docker
   - name: DATABASE_URL
     value: jdbc:postgresql://codes-and-texts-database:5432
-  - name: DATABASE_USER
+  - name: DATABASE_USERNAME
     value: cat
-  - name: DATABASE_PASS
+  - name: DATABASE_PASSWORD
     value: cat
 
 #frontent-angular:
