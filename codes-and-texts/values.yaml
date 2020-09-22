@@ -8,7 +8,7 @@ database:
   postgresqlDatabase: cat
 
 server:
-  replicaCount: 0
+  replicaCount: 1
   image:
     repository: balcodecampcat/cat-server
     tag: 9285770a5adbe66d38d8ddd406eecab2b2b8bd92
