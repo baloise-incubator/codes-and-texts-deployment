@@ -17,15 +17,15 @@ server:
       servicePort: 8080
       ingress:
         host: cat-server.apps.baloise.dev
-    env:
-    - name: SPRING_PROFILES_ACTIVE
-      value: docker
-    - name: DATABASE_URL
-      value: jdbc:postgresql://database:5432
-    - name: DATABASE_USER
-      value: cat
-    - name: DATABASE_PASS
-      value: cat
+  env:
+  - name: SPRING_PROFILES_ACTIVE
+    value: docker
+  - name: DATABASE_URL
+    value: jdbc:postgresql://database:5432
+  - name: DATABASE_USER
+    value: cat
+  - name: DATABASE_PASS
+    value: cat
 
 #frontent-angular:
 #  replicaCount: 0
