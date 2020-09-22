@@ -7,7 +7,7 @@ database:
   postgresqlPassword: cat
   postgresqlDatabase: cat
 
-server:
+catserver:
   replicaCount: 1
   image:
     repository: balcodecampcat/cat-server
