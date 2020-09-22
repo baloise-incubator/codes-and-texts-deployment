@@ -6,11 +6,11 @@ dependencies:
   version: 8.10.14
   repository: https://charts.bitnami.com/bitnami
   alias: database
+- name: generic-chart
+  version: 2.1.0
+  repository: https://registry.baloise.dev/chartrepo/library
+  alias: server
 
-#  - name: generic-chart
-#    version: 2.1.0
-#    repository: https://registry.baloise.dev/chartrepo/library
-#    alias: server
 #  - name: generic-chart
 #    version: 2.1.0
 #    repository: https://registry.baloise.dev/chartrepo/library

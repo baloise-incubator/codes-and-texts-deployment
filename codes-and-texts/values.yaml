@@ -6,3 +6,52 @@ database:
   postgresqlUsername: cat
   postgresqlPassword: cat
   postgresqlDatabase: cat
+
+server:
+  replicaCount: 0
+  image:
+    repository: balcodecampcat/cat-server
+    tag: latest
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: cat-server.apps.baloise.dev
+    env:
+    - name: SPRING_PROFILES_ACTIVE
+      value: docker
+    - name: DATABASE_URL
+      value: jdbc:postgresql://database:5432
+    - name: DATABASE_USER
+      value: cat
+    - name: DATABASE_PASS
+      value: cat
+
+#frontent-angular:
+#  replicaCount: 0
+#  image:
+#    repository: balcodecampcat/cat-frontend-angular
+#    tag: latest
+#  network:
+#    http:
+#      servicePort: 8080
+#      ingress:
+#        host: cat-angular.apps.baloise.dev
+#  env:
+#    - name: CAT_API_URL
+#      value: http://cat-server.apps.baloise.dev
+#
+#frontent-vaadin:
+#  replicaCount: 0
+#  image:
+#    repository: balcodecampcat/cat-frontend-vaadin
+#    tag: latest
+#  network:
+#    http:
+#      servicePort: 8080
+#      ingress:
+#        host: cat-vaadin.apps.baloise.dev
+#  env:
+#    - name: CAT_API_URL
+#      value: http://cat-server.apps.baloise.dev
+
