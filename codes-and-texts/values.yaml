@@ -28,7 +28,7 @@ catserver:
     value: cat
 
 frontend-vaadin:
-  replicaCount: 0
+  replicaCount: 1
   image:
     repository: balcodecampcat/cat-frontend-vaadin
     tag: ef24355638f63bcd253973d9822b729e61bd5815
