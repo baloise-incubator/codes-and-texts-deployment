@@ -43,7 +43,7 @@ frontend-vaadin:
   - name: BACKEND_PORT
     value: 8080
 
-#frontent-angular:
+#frontend-angular:
 #  replicaCount: 0
 #  image:
 #    repository: balcodecampcat/cat-frontend-angular
