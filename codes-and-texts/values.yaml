@@ -11,7 +11,7 @@ catserver:
   replicaCount: 1
   image:
     repository: balcodecampcat/cat-server
-    tag: 8668482b8c52fe119ba088c7f22686edbf10ec6e
+    tag: 381b6d9620b99e2719b45bf695b1c8a0b4e30a06
   network:
     http:
       servicePort: 8080
