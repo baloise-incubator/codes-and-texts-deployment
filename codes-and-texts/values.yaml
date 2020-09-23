@@ -31,17 +31,17 @@ frontend-vaadin:
   replicaCount: 0
   image:
     repository: balcodecampcat/cat-frontend-vaadin
-    tag: latest
+    tag: ef24355638f63bcd253973d9822b729e61bd5815
   network:
     http:
       servicePort: 8080
       ingress:
         host: cat-vaadin.apps.baloise.dev
   env:
-    - name: BACKEND_HOST
-      value: catserver
-    - name: BACKEND_PORT
-      value: 8080
+  - name: BACKEND_HOST
+    value: catserver
+  - name: BACKEND_PORT
+    value: 8080
 
 #frontent-angular:
 #  replicaCount: 0
