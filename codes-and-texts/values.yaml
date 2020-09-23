@@ -27,7 +27,7 @@ catserver:
   - name: DATABASE_PASSWORD
     value: cat
 
-frontent-vaadin:
+frontend-vaadin:
   replicaCount: 0
   image:
     repository: balcodecampcat/cat-frontend-vaadin
