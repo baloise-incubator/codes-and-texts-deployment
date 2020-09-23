@@ -38,10 +38,8 @@ frontend-vaadin:
       ingress:
         host: cat-vaadin.apps.baloise.dev
   env:
-  - name: BACKEND_HOST
-    value: catserver
-  - name: BACKENDASDFD_PORT
-    value: 8080
+  - name: CAT_BACKEND_URL
+    value: http://catserver:8080
 
 #frontend-angular:
 #  replicaCount: 0
