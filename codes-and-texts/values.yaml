@@ -27,6 +27,22 @@ catserver:
   - name: DATABASE_PASSWORD
     value: cat
 
+frontent-vaadin:
+  replicaCount: 0
+  image:
+    repository: balcodecampcat/cat-frontend-vaadin
+    tag: latest
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: cat-vaadin.apps.baloise.dev
+  env:
+    - name: BACKEND_HOST
+      value: catserver
+    - name: BACKEND_PORT
+      value: 8080
+
 #frontent-angular:
 #  replicaCount: 0
 #  image:
@@ -41,17 +57,3 @@ catserver:
 #    - name: CAT_API_URL
 #      value: http://cat-server.apps.baloise.dev
 #
-#frontent-vaadin:
-#  replicaCount: 0
-#  image:
-#    repository: balcodecampcat/cat-frontend-vaadin
-#    tag: latest
-#  network:
-#    http:
-#      servicePort: 8080
-#      ingress:
-#        host: cat-vaadin.apps.baloise.dev
-#  env:
-#    - name: CAT_API_URL
-#      value: http://cat-server.apps.baloise.dev
-
