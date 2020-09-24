@@ -31,7 +31,7 @@ frontend-vaadin:
   replicaCount: 1
   image:
     repository: balcodecampcat/cat-frontend-vaadin
-    tag: e340edf913b1ead7af6e549876b45c475ec63600
+    tag: b18efa72db6699823686025dbd421b2ed24826b8
   network:
     http:
       servicePort: 8080
