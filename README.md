@@ -11,7 +11,7 @@ apps: [![App Status](https://argocd.baloise.dev/api/badge?name=okd4-bal-code-cam
 
 |namespace|status
 |-|-|
-|frontend-alpha|[![App Status](https://argocd.baloise.dev/api/badge?name=codes-and-texts&revision=true)](https://argocd.baloise.dev/applications/okd4-cat-config)|
+|Codes and Texts|[![App Status](https://argocd.baloise.dev/api/badge?name=codes-and-texts&revision=true)](https://argocd.baloise.dev/applications/okd4-cat-config)|
 
 * OpenShift Project: https://console-openshift-console.apps.okd.baloise.dev/project-details/ns/codes-and-texts
 * ArgoCD: https://argocd.baloise.dev/applications/codes-and-texts
