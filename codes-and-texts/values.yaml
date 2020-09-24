@@ -11,7 +11,7 @@ catserver:
   replicaCount: 1
   image:
     repository: balcodecampcat/cat-server
-    tag: 60d0200b4228f6a44e2b5b043fbcb52396fd940b
+    tag: 9eb133a02e50526c06924c24a0a00018fd3722d7
   network:
     http:
       servicePort: 8080
@@ -31,7 +31,7 @@ frontend-vaadin:
   replicaCount: 1
   image:
     repository: balcodecampcat/cat-frontend-vaadin
-    tag: 60d0200b4228f6a44e2b5b043fbcb52396fd940b
+    tag: 9eb133a02e50526c06924c24a0a00018fd3722d7
   network:
     http:
       servicePort: 8080
