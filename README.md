@@ -11,7 +11,9 @@ apps: [![App Status](https://argocd.baloise.dev/api/badge?name=okd4-bal-code-cam
 
 |namespace|status
 |-|-|
-|frontend-alpha|[![App Status](https://argocd.baloise.dev/api/badge?name=okd4-cat-config&revision=true)](https://argocd.baloise.dev/applications/okd4-cat-config)|
+|frontend-alpha|[![App Status](https://argocd.baloise.dev/api/badge?name=codes-and-texts&revision=true)](https://argocd.baloise.dev/applications/okd4-cat-config)|
 
-## Adding/Removing New Namespaces
-Just add/remove a folder. Every git push triggers a sync and the new namespaces are added in the [Application Root Config Repo YAML](https://github.com/baloise-incubator/okd4-apps-root-config/blob/master/apps/okd4-bal-code-camp-cat-apps.yaml).
+* OpenShift Project: https://console-openshift-console.apps.okd.baloise.dev/project-details/ns/codes-and-texts
+* ArgoCD: https://argocd.baloise.dev/applications/codes-and-texts
+
+
