@@ -26,6 +26,18 @@ catserver:
     value: cat
   - name: DATABASE_PASSWORD
     value: cat
+  - name: KEYCLOAK_REALM_URL
+    value: https://keycloak-okd4-sampleconfig.apps.okd.baloise.dev/auth/realms/workshop
+  - name: KEYCLOAK_CLIENT_ID
+    valueFrom:
+      secretKeyRef:
+        name: keycloak
+        key: cliendId
+  - name: KEYCLOAK_CLIENT_SECRET
+    valueFrom:
+      secretKeyRef:
+        name: keycloak
+        key: clientSecret
 
 frontend-vaadin:
   replicaCount: 1
