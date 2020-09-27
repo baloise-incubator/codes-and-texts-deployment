@@ -32,7 +32,7 @@ catserver:
     valueFrom:
       secretKeyRef:
         name: keycloak
-        key: cliendId
+        key: clientId
   - name: KEYCLOAK_CLIENT_SECRET
     valueFrom:
       secretKeyRef:
