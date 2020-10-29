@@ -7,11 +7,11 @@ database:
   postgresqlPassword: cat
   postgresqlDatabase: cat
 
-phppgadmin:
+database-admin:
   replicaCount: 1
   image:
     repository: bitnami/phppgadmin
-    tag: latest
+    tag: 7.12.1
   network:
     http:
       service: 8080
@@ -22,6 +22,8 @@ phppgadmin:
     value: codes-and-texts-database
   - name: DATABASE_PORT_NUMBER
     value: 5432
+  - name: DATABASE_SSL_MODE
+    value: allow
 
 catserver:
   replicaCount: 1
