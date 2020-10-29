@@ -21,7 +21,7 @@ database-admin:
   - name: DATABASE_HOST
     value: codes-and-texts-database
   - name: DATABASE_PORT_NUMBER
-    value: 5432
+    value: '5432'
   - name: DATABASE_SSL_MODE
     value: allow
 
