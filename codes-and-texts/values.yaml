@@ -7,6 +7,22 @@ database:
   postgresqlPassword: cat
   postgresqlDatabase: cat
 
+phppgadmin:
+  replicaCount: 1
+  image:
+    repository: bitnami/phppgadmin
+    tag: latest
+  network:
+    http:
+      service: 8080
+      ingress:
+        host: cat-dbadmin.apps.baloise.dev
+  env:
+  - name: DATABASE_HOST
+    value: codes-and-texts-database
+  - name: DATABASE_PORT_NUMBER
+    value: 5432
+
 catserver:
   replicaCount: 1
   image:
